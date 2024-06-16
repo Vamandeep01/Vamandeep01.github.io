@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-image: url("Humidifiers\ index.jpeg");
+}
+
+header {
+    background: #4CAF50;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#hero {
+    background: url('Humidifiers\ index.jpeg') no-repeat center center/cover;    height: 130vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+.Div{
+    background-color: #d6e9d6;
+}
+
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.hero-content h2 {
+    margin-bottom: 1rem;
+}
+
+.hero-content .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+.container{
+    text-align: center;
+}
+
+.hero-content .btn:hover {
+    background: #45a049;
+}
+
+#intro, .about-content, .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    text-align: left;
+}
+
+#intro img, .about-content img, .contact-content img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+#intro div, .about-content div, .contact-content div {
+    flex: 1;
+    padding: 1rem;
+}
+
+.contact-container {
+    text-align: left;
+    background-color: #f4f4f4;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+}
+
+.contact-info {
+    max-width: 500px;
+    margin-right: 2rem;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    margin-top: 1rem;
+    background: #f4f4f4;
+    border-radius: 10px;
+    padding: 1rem;
+}
+.about-container {
+    text-align: left;
+    background-color: #f4f4f4;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+}
+
+section {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+#products .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.product-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.product-card .product-info {
+    padding: 1rem;
+}
+
+.product-card h3 {
+    margin: 0.5rem 0;
+}
+
+.product-card p {
+    margin: 0.5rem 0;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-links a img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .hero-content {
+        padding: 1rem;
+    }
+
+    #intro, .about-content, .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #intro img, .about-content img, .contact-content img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    #intro div, .about-content div, .contact-content div {
+        width: 100%;
+    }
+
+    .contact-info {
+        margin-right: 0;
+    }
+
+    .map-container {
+        max-width: 100%;
+    }
+}
